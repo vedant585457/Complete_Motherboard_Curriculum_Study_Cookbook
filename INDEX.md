@@ -41,19 +41,21 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 
 ---
 
-## Chapter 03 — _Pending_ ⏳
+## Chapter 03 — CPU Socket, Power & Init (11 sections) 🔄
 
 | # | Section | Description | Image |
 |---|---|---|---|
-| 3.1 | _TBD_ | _TBD_ | ⏳ |
-| 3.2 | _TBD_ | _TBD_ | ⏳ |
-| 3.3 | _TBD_ | _TBD_ | ⏳ |
-| 3.4 | _TBD_ | _TBD_ | ⏳ |
-| 3.5 | _TBD_ | _TBD_ | ⏳ |
-| 3.6 | _TBD_ | _TBD_ | ⏳ |
-| 3.7 | _TBD_ | _TBD_ | ⏳ |
-| 3.8 | _TBD_ | _TBD_ | ⏳ |
-| 3.9 | _TBD_ | _TBD_ | ⏳ |
+| 3.1 | CPU Socket | Mechanical/electrical interface (LGA, PGA, BGA) connecting CPU pins/pads to board. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.1_CPU_Socket.png) |
+| 3.2 | Socket Types | LGA1700, AM5, BGA, etc. — pin count/layout determines compatibility. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.2_Socket_Types.png) |
+| 3.3 | CPU Power Delivery | VRM supplies regulated Vcore/SOC voltage through socket power pins. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.3_CPU_Power_Delivery.png) |
+| 3.4 | CPU Buses/Interconnects | DMI, Infinity Fabric, ring bus — internal/external CPU communication paths. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.4_CPU_Buses_Interconnects.png) |
+| 3.5 | Memory Communication | Direct CPU-to-DIMM electrical paths; latency-sensitive routing. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.5_Memory_Communication.png) |
+| 3.6 | PCIe Communication | CPU-originated lanes to GPU/NVMe, bypassing chipset for speed. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.6_PCIe_Communication.png) |
+| 3.7 | CPU Initialization | Power-up sequence before instruction execution begins; reset de-assertion timing. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.7_CPU_Initialization.png) |
+| 3.8 | Reset Signals (RESET#, PLTRST#) | Force known state on power-up or fault; must sequence correctly. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.8_Reset_Signals.png) |
+| 3.9 | Power-Good Signals (PWR_OK) | Confirms stable voltage before allowing next stage to proceed. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.9_Power_Good_Signals.png) |
+| 3.10 | CPU Straps | Pin configurations sampled at reset defining CPU boot mode/features. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.10_CPU_Straps.png) |
+| 3.11 | Platform Initialization | Firmware-driven bring-up of CPU, memory, chipset before OS handoff. | 🔄 _pending (next session)_ |
 
 ---
 
@@ -75,12 +77,12 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 ## 📊 Overall Progress
 
 ```
-Chapter 01 ████████████████████ 9/9   ✅
-Chapter 02 ████████████████████ 12/12 ✅
-Chapter 03 ░░░░░░░░░░░░░░░░░░░░ 0/9   ⏳
-Chapter 04 ░░░░░░░░░░░░░░░░░░░░ 0/8   ⏳
+Chapter 01 ████████████████████ 9/9    ✅
+Chapter 02 ████████████████████ 12/12  ✅
+Chapter 03 ██████████████████░░ 10/11  🔄 (1 pending: 3.11)
+Chapter 04 ░░░░░░░░░░░░░░░░░░░░ 0/8    ⏳
 ─────────────────────────────────────
-Total       21/35 (60.0%)
+Total       31/35 (88.6%)
 ```
 
 ---

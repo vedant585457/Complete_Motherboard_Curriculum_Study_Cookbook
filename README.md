@@ -12,7 +12,7 @@ Each topic is rendered as a **detailed technical illustration** on a **black bac
 |---|---|---|---|
 | **01** | Motherboard Fundamentals | 1.1 – 1.9 | ✅ Complete (9 / 9) |
 | **02** | Core Components & Interconnects | 2.1 – 2.12 | ✅ Complete (12 / 12) |
-| **03** | _Pending topics_ | 3.1 – 3.9 | ⏳ Pending |
+| **03** | CPU Socket, Power & Init | 3.1 – 3.11 | 🔄 In progress (10 / 11) |
 | **04** | _Pending topics_ | 4.1 – 4.8 | ⏳ Pending |
 
 > Total: **35 sections** across multiple chapters
@@ -35,8 +35,11 @@ Complete_Motherboard_Curriculum_Study_Cookbook/
     ├── chapter-02-core-components-interconnects/
     │   └── 2.1 ... 2.12                ✅ 12 PNGs (Chapter 2 complete)
     │
-    ├── chapter-03-*/                  ← Future sections will go here
-    └── chapter-04-*/
+    ├── chapter-03-cpu-socket-power-init/
+    │   ├── 3.1 ... 3.10               ✅ 10 PNGs
+    │   └── 3.11                       🔄 1 pending (next session)
+    │
+    ├── chapter-04-*/                  ← Future sections will go here
 ```
 
 ---
@@ -57,7 +60,21 @@ Complete_Motherboard_Curriculum_Study_Cookbook/
 
 ---
 
-## ✅ Chapter 02 — Core Components & Interconnects (Complete: 12/12)
+## 🔄 Chapter 03 — CPU Socket, Power & Init (In Progress: 10/11)
+
+| # | Section | Image | Description |
+|---|---|---|---|
+| 3.1 | CPU Socket | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.1_CPU_Socket.png) | Mechanical/electrical interface (LGA, PGA, BGA) connecting CPU to board. |
+| 3.2 | Socket Types | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.2_Socket_Types.png) | LGA1700, AM5, BGA — pin count/layout determines compatibility. |
+| 3.3 | CPU Power Delivery | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.3_CPU_Power_Delivery.png) | VRM supplies regulated Vcore/SOC voltage through socket power pins. |
+| 3.4 | CPU Buses/Interconnects | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.4_CPU_Buses_Interconnects.png) | DMI, Infinity Fabric, ring bus — internal/external CPU paths. |
+| 3.5 | Memory Communication | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.5_Memory_Communication.png) | Direct CPU-to-DIMM electrical paths; latency-sensitive routing. |
+| 3.6 | PCIe Communication | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.6_PCIe_Communication.png) | CPU-originated lanes to GPU/NVMe, bypassing chipset. |
+| 3.7 | CPU Initialization | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.7_CPU_Initialization.png) | Power-up sequence before instruction execution; reset de-assertion timing. |
+| 3.8 | Reset Signals (RESET#, PLTRST#) | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.8_Reset_Signals.png) | Force known state on power-up or fault; must sequence correctly. |
+| 3.9 | Power-Good Signals (PWR_OK) | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.9_Power_Good_Signals.png) | Confirms stable voltage before allowing next stage. |
+| 3.10 | CPU Straps | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.10_CPU_Straps.png) | Pin configurations sampled at reset defining boot mode. |
+| 3.11 | Platform Initialization | 🔄 _pending_ | Firmware-driven bring-up of CPU, memory, chipset before OS handoff. |
 
 | # | Section | Image | Description |
 |---|---|---|---|
@@ -103,10 +120,10 @@ Complete_Motherboard_Curriculum_Study_Cookbook/
 
 - [x] **Chapter 01 — Motherboard Fundamentals** (9 / 9 sections) ✅
 - [x] **Chapter 02 — Core Components & Interconnects** (12 / 12 sections) ✅
-- [ ] **Chapter 03** — _awaiting topics_
+- [x] **Chapter 03 — CPU Socket, Power & Init** (10 / 11 sections) 🔄
 - [ ] **Chapter 04** — _awaiting topics_
 
-**Total:** 21 / 35 sections complete (60.0%)
+**Total:** 31 / 35 sections complete (88.6%)
 
 ---
 
