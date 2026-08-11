@@ -22,7 +22,7 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 
 ---
 
-## Chapter 02 — Core Components & Interconnects (12 sections) 🔄
+## Chapter 02 — Core Components & Interconnects (12 sections) ✅
 
 | # | Section | Description | Image |
 |---|---|---|---|
@@ -34,10 +34,10 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 | 2.6 | PCIe Root Complex | CPU-integrated logic that originates PCIe transactions to GPU/NVMe/chipset. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.6_PCIe_Root_Complex.png) |
 | 2.7 | I/O Controllers | Manage USB, SATA, audio, LAN — mostly housed in PCH. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.7_IO_Controllers.png) |
 | 2.8 | Embedded Controllers (EC) | Microcontroller handling power sequencing, fans, keyboard (laptops). | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.8_Embedded_Controllers_EC.png) |
-| 2.9 | Super I/O | Legacy chip managing serial/parallel ports, fan control, hardware monitoring. | 🔄 _pending (next session)_ |
+| 2.9 | Super I/O | Legacy chip managing serial/parallel ports, fan control, hardware monitoring. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.9_Super_IO.png) |
 | 2.10 | Clock Generators | Provide reference clocks to CPU, PCIe, memory. Critical for synchronized operation. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.10_Clock_Generators.png) |
 | 2.11 | Management Controllers (BMC) | Out-of-band management, remote diagnostics, independent of main CPU. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.11_Management_Controllers_BMC.png) |
-| 2.12 | Interconnects (DMI, FDI, etc.) | Proprietary buses linking CPU to PCH; bandwidth/latency implications. | 🔄 _pending (next session)_ |
+| 2.12 | Interconnects (DMI, FDI, etc.) | Proprietary buses linking CPU to PCH; bandwidth/latency implications. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.12_Interconnects_DMI_FDI.png) |
 
 ---
 
@@ -76,11 +76,11 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 
 ```
 Chapter 01 ████████████████████ 9/9   ✅
-Chapter 02 ████████████████░░░░ 10/12 🔄 (2 pending: 2.9, 2.12)
+Chapter 02 ████████████████████ 12/12 ✅
 Chapter 03 ░░░░░░░░░░░░░░░░░░░░ 0/9   ⏳
 Chapter 04 ░░░░░░░░░░░░░░░░░░░░ 0/8   ⏳
 ─────────────────────────────────────
-Total       19/35 (54.3%)
+Total       21/35 (60.0%)
 ```
 
 ---
