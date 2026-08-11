@@ -59,7 +59,7 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 
 ---
 
-## Chapter 04 — Chipset, Buses & Diagnosis (15 sections) 🔄
+## Chapter 04 — Chipset, Buses & Diagnosis (15 sections) ✅
 
 | # | Section | Description | Image |
 |---|---|---|---|
@@ -73,11 +73,11 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 | 4.8 | SATA (via chipset) | Native SATA controller for HDD/SSD connections. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.8_SATA_via_Chipset.png) |
 | 4.9 | Audio Interface (HDA link) | Chipset connects to audio codec via HD Audio bus. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.9_Audio_HDA_Link.png) |
 | 4.10 | Networking Interfaces | Chipset provides MAC or PCIe link to LAN/Wi-Fi controllers. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.10_Networking_Interfaces.png) |
-| 4.11 | SPI (Chipset-BIOS link) | Chipset reads BIOS/UEFI firmware from SPI flash at boot. | 🔄 _pending (next session)_ |
-| 4.12 | SMBus | Low-speed bus for sensors, SPD (RAM), and power management communication. | 🔄 _pending (next session)_ |
-| 4.13 | LPC/eSPI | Legacy/modern low-pin-count buses connecting Super I/O and EC to chipset. | 🔄 _pending (next session)_ |
-| 4.14 | Chipset Initialization | Sequence of chipset bring-up during POST; dependency for I/O availability. | 🔄 _pending (next session)_ |
-| 4.15 | Chipset Failure Diagnosis | Symptoms include missing USB/SATA/audio; isolate via rail and signal checks. | 🔄 _pending (next session)_ |
+| 4.11 | SPI (Chipset-BIOS link) | Chipset reads BIOS/UEFI firmware from SPI flash at boot. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.11_SPI_Chipset_BIOS_Link.png) |
+| 4.12 | SMBus | Low-speed bus for sensors, SPD (RAM), and power management communication. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.12_SMBus.png) |
+| 4.13 | LPC/eSPI | Legacy/modern low-pin-count buses connecting Super I/O and EC to chipset. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.13_LPC_eSPI.png) |
+| 4.14 | Chipset Initialization | Sequence of chipset bring-up during POST; dependency for I/O availability. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.14_Chipset_Initialization.png) |
+| 4.15 | Chipset Failure Diagnosis | Symptoms include missing USB/SATA/audio; isolate via rail and signal checks. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.15_Chipset_Failure_Diagnosis.png) |
 
 ---
 
@@ -87,9 +87,9 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 Chapter 01 ████████████████████ 9/9    ✅
 Chapter 02 ████████████████████ 12/12  ✅
 Chapter 03 ████████████████████ 11/11  ✅
-Chapter 04 ██████████████░░░░░░ 10/15  🔄 (5 pending: 4.11-4.15)
+Chapter 04 ████████████████████ 15/15 ✅
 ─────────────────────────────────────
-Total       32/35 (91.4%)
+Total       35/35 (100.0%) 🎉
 ```
 
 ---
