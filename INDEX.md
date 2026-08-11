@@ -59,18 +59,25 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 
 ---
 
-## Chapter 04 — _Pending_ ⏳
+## Chapter 04 — Chipset, Buses & Diagnosis (15 sections) 🔄
 
 | # | Section | Description | Image |
 |---|---|---|---|
-| 4.1 | _TBD_ | _TBD_ | ⏳ |
-| 4.2 | _TBD_ | _TBD_ | ⏳ |
-| 4.3 | _TBD_ | _TBD_ | ⏳ |
-| 4.4 | _TBD_ | _TBD_ | ⏳ |
-| 4.5 | _TBD_ | _TBD_ | ⏳ |
-| 4.6 | _TBD_ | _TBD_ | ⏳ |
-| 4.7 | _TBD_ | _TBD_ | ⏳ |
-| 4.8 | _TBD_ | _TBD_ | ⏳ |
+| 4.1 | Historical Chipset Architecture | Two-chip Northbridge/Southbridge design; explains legacy board layouts. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.1_Historical_Chipset_Architecture.png) |
+| 4.2 | Northbridge | Handled high-speed CPU/RAM/GPU links; now obsolete on modern boards. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.2_Northbridge.png) |
+| 4.3 | Southbridge | Handled slow I/O (USB, SATA, audio); evolved into PCH. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.3_Southbridge.png) |
+| 4.4 | Modern PCH | Single chip for remaining I/O after CPU absorbed memory/PCIe controllers. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.4_Modern_PCH.png) |
+| 4.5 | Chipset Responsibilities | Provides extra PCIe lanes, USB ports, SATA, audio codec interface, networking. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.5_Chipset_Responsibilities.png) |
+| 4.6 | PCIe Lanes (Chipset-provided) | Secondary lanes for M.2/expansion slots, slower than CPU-direct lanes. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.6_PCIe_Lanes_Chipset.png) |
+| 4.7 | USB (via chipset) | Chipset hosts most rear/front-panel USB ports. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.7_USB_via_Chipset.png) |
+| 4.8 | SATA (via chipset) | Native SATA controller for HDD/SSD connections. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.8_SATA_via_Chipset.png) |
+| 4.9 | Audio Interface (HDA link) | Chipset connects to audio codec via HD Audio bus. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.9_Audio_HDA_Link.png) |
+| 4.10 | Networking Interfaces | Chipset provides MAC or PCIe link to LAN/Wi-Fi controllers. | [📷](./visualizelearning/chapter-04-chipset-buses-diagnosis/4.10_Networking_Interfaces.png) |
+| 4.11 | SPI (Chipset-BIOS link) | Chipset reads BIOS/UEFI firmware from SPI flash at boot. | 🔄 _pending (next session)_ |
+| 4.12 | SMBus | Low-speed bus for sensors, SPD (RAM), and power management communication. | 🔄 _pending (next session)_ |
+| 4.13 | LPC/eSPI | Legacy/modern low-pin-count buses connecting Super I/O and EC to chipset. | 🔄 _pending (next session)_ |
+| 4.14 | Chipset Initialization | Sequence of chipset bring-up during POST; dependency for I/O availability. | 🔄 _pending (next session)_ |
+| 4.15 | Chipset Failure Diagnosis | Symptoms include missing USB/SATA/audio; isolate via rail and signal checks. | 🔄 _pending (next session)_ |
 
 ---
 
@@ -79,8 +86,8 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 ```
 Chapter 01 ████████████████████ 9/9    ✅
 Chapter 02 ████████████████████ 12/12  ✅
-Chapter 03 ████████████████████ 11/11 ✅
-Chapter 04 ░░░░░░░░░░░░░░░░░░░░ 0/8    ⏳
+Chapter 03 ████████████████████ 11/11  ✅
+Chapter 04 ██████████████░░░░░░ 10/15  🔄 (5 pending: 4.11-4.15)
 ─────────────────────────────────────
 Total       32/35 (91.4%)
 ```

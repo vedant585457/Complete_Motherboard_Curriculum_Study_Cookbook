@@ -13,7 +13,7 @@ Each topic is rendered as a **detailed technical illustration** on a **black bac
 | **01** | Motherboard Fundamentals | 1.1 – 1.9 | ✅ Complete (9 / 9) |
 | **02** | Core Components & Interconnects | 2.1 – 2.12 | ✅ Complete (12 / 12) |
 | **03** | CPU Socket, Power & Init | 3.1 – 3.11 | ✅ Complete (11 / 11) |
-| **04** | _Pending topics_ | 4.1 – 4.8 | ⏳ Pending |
+| **04** | Chipset, Buses & Diagnosis | 4.1 – 4.15 | 🔄 In progress (10 / 15) |
 
 > Total: **35 sections** across multiple chapters
 
@@ -38,7 +38,10 @@ Complete_Motherboard_Curriculum_Study_Cookbook/
     ├── chapter-03-cpu-socket-power-init/
     │   └── 3.1 ... 3.11                ✅ 11 PNGs (Chapter 3 complete)
     │
-    ├── chapter-04-*/                  ← Future sections will go here
+    ├── chapter-04-chipset-buses-diagnosis/
+    │   ├── 4.1 ... 4.10                ✅ 10 PNGs
+    │   └── 4.11 ... 4.15               🔄 5 pending (next session)
+    │
 ```
 
 ---
@@ -120,9 +123,9 @@ Complete_Motherboard_Curriculum_Study_Cookbook/
 - [x] **Chapter 01 — Motherboard Fundamentals** (9 / 9 sections) ✅
 - [x] **Chapter 02 — Core Components & Interconnects** (12 / 12 sections) ✅
 - [x] **Chapter 03 — CPU Socket, Power & Init** (11 / 11 sections) ✅
-- [ ] **Chapter 04** — _awaiting topics_
+- [x] **Chapter 04 — Chipset, Buses & Diagnosis** (10 / 15 sections) 🔄
 
-**Total:** 32 / 35 sections complete (91.4%)
+**Total:** 32 / 35 sections complete (91.4%) — 5 remaining in Ch 4
 
 ---
 
