@@ -41,7 +41,7 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 
 ---
 
-## Chapter 03 — CPU Socket, Power & Init (11 sections) 🔄
+## Chapter 03 — CPU Socket, Power & Init (11 sections) ✅
 
 | # | Section | Description | Image |
 |---|---|---|---|
@@ -55,7 +55,7 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 | 3.8 | Reset Signals (RESET#, PLTRST#) | Force known state on power-up or fault; must sequence correctly. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.8_Reset_Signals.png) |
 | 3.9 | Power-Good Signals (PWR_OK) | Confirms stable voltage before allowing next stage to proceed. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.9_Power_Good_Signals.png) |
 | 3.10 | CPU Straps | Pin configurations sampled at reset defining CPU boot mode/features. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.10_CPU_Straps.png) |
-| 3.11 | Platform Initialization | Firmware-driven bring-up of CPU, memory, chipset before OS handoff. | 🔄 _pending (next session)_ |
+| 3.11 | Platform Initialization | Firmware-driven bring-up of CPU, memory, chipset before OS handoff. | [📷](./visualizelearning/chapter-03-cpu-socket-power-init/3.11_Platform_Initialization.png) |
 
 ---
 
@@ -79,10 +79,10 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 ```
 Chapter 01 ████████████████████ 9/9    ✅
 Chapter 02 ████████████████████ 12/12  ✅
-Chapter 03 ██████████████████░░ 10/11  🔄 (1 pending: 3.11)
+Chapter 03 ████████████████████ 11/11 ✅
 Chapter 04 ░░░░░░░░░░░░░░░░░░░░ 0/8    ⏳
 ─────────────────────────────────────
-Total       31/35 (88.6%)
+Total       32/35 (91.4%)
 ```
 
 ---
