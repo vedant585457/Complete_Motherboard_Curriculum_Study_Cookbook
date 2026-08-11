@@ -1,0 +1,28 @@
+# OS / Editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# Build / dependency outputs (just in case)
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+
+# Secrets — never commit
+.env
+*.pem
+*.key
+
+# Large generated datasets / temp caches (keep repo light)
+.cache/
+.arena/
+.mypy_cache/
+.pytest_cache/
+
+# Keep ALL study-note PNGs tracked — they ARE the deliverable
+# (do NOT add *.png here on purpose)
