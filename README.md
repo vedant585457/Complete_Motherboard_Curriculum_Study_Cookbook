@@ -1,6 +1,6 @@
 # 🖥️ Complete Motherboard Curriculum — Visual Study Cookbook
 
-> A **35-section deep-dive** into motherboard design, architecture, signals, power, and troubleshooting — visualized as dense, handwritten-style chalkboard study notes.
+> A **47-section deep-dive** into motherboard design, architecture, signals, power, and troubleshooting — visualized as dense, handwritten-style chalkboard study notes.
 
 Each topic is rendered as a **detailed technical illustration** on a **black background with white text**, packed edge-to-edge with definitions, diagrams, part numbers, voltages, frequencies, troubleshooting tips, and comparison tables — the way an engineering student would scribble them on a blackboard.
 
@@ -15,7 +15,7 @@ Each topic is rendered as a **detailed technical illustration** on a **black bac
 | **03** | CPU Socket, Power & Init | 3.1 – 3.11 | ✅ Complete (11 / 11) |
 | **04** | Chipset, Buses & Diagnosis | 4.1 – 4.15 | ✅ Complete (15 / 15) |
 
-> Total: **35 sections** across multiple chapters
+> Total: **47 sections** across 4 chapters (originally specified as ~35; user provided 47 topics)
 
 ---
 
@@ -123,7 +123,9 @@ Complete_Motherboard_Curriculum_Study_Cookbook/
 - [x] **Chapter 03 — CPU Socket, Power & Init** (11 / 11 sections) ✅
 - [x] **Chapter 04 — Chipset, Buses & Diagnosis** (15 / 15 sections) ✅
 
-**Total:** 35 / 35 sections complete (100.0%) 🎉 **CURRICULUM COMPLETE**
+**Total:** 47 / 47 sections complete (100.0%) 🎉 **CURRICULUM COMPLETE**
+
+_Note: User originally specified ~35 sections; actual delivered = 47 unique topics (9+12+11+15) across 4 chapters. All generated, indexed, and live on GitHub._
 
 ---
 

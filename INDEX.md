@@ -1,4 +1,4 @@
-# 📑 Full Curriculum Index — 35 Sections
+# 📑 Full Curriculum Index — 47 Sections
 
 Complete catalog of all topics covered in the **Complete Motherboard Curriculum — Visual Study Cookbook**.
 
@@ -89,7 +89,7 @@ Chapter 02 ████████████████████ 12/12  �
 Chapter 03 ████████████████████ 11/11  ✅
 Chapter 04 ████████████████████ 15/15 ✅
 ─────────────────────────────────────
-Total       35/35 (100.0%) 🎉
+Total       47/47 (100.0%) 🎉
 ```
 
 ---
