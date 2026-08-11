@@ -2,7 +2,7 @@
 
 Complete catalog of all topics covered in the **Complete Motherboard Curriculum — Visual Study Cookbook**.
 
-Legend: ✅ Done · ⏳ Pending
+Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 
 ---
 
@@ -22,27 +22,26 @@ Legend: ✅ Done · ⏳ Pending
 
 ---
 
-## Chapter 02 — _Pending_ ⏳
-
-_Awaiting topic list. Placeholder: chapter-02-* folder will be created when topics arrive._
+## Chapter 02 — Core Components & Interconnects (12 sections) 🔄
 
 | # | Section | Description | Image |
 |---|---|---|---|
-| 2.1 | _TBD_ | _TBD_ | ⏳ |
-| 2.2 | _TBD_ | _TBD_ | ⏳ |
-| 2.3 | _TBD_ | _TBD_ | ⏳ |
-| 2.4 | _TBD_ | _TBD_ | ⏳ |
-| 2.5 | _TBD_ | _TBD_ | ⏳ |
-| 2.6 | _TBD_ | _TBD_ | ⏳ |
-| 2.7 | _TBD_ | _TBD_ | ⏳ |
-| 2.8 | _TBD_ | _TBD_ | ⏳ |
-| 2.9 | _TBD_ | _TBD_ | ⏳ |
+| 2.1 | CPU | Executes instructions; connects via socket to power, memory, I/O. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.1_CPU.png) |
+| 2.2 | Chipset / PCH | Modern single-chip successor to Northbridge/Southbridge; manages I/O, storage, USB. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.2_Chipset_PCH.png) |
+| 2.3 | Northbridge / Southbridge (Legacy) | Northbridge = CPU/RAM/GPU; Southbridge = slower I/O. Mostly absorbed. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.3_Northbridge_Southbridge_Legacy.png) |
+| 2.4 | Modern Chipset Architecture | PCH connects to CPU via DMI, handles I/O since memory/PCIe moved on-die. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.4_Modern_Chipset_Architecture.png) |
+| 2.5 | Memory Controller (IMC) | Integrated into CPU; manages DDR read/write timing and channels. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.5_Memory_Controller_IMC.png) |
+| 2.6 | PCIe Root Complex | CPU-integrated logic that originates PCIe transactions to GPU/NVMe/chipset. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.6_PCIe_Root_Complex.png) |
+| 2.7 | I/O Controllers | Manage USB, SATA, audio, LAN — mostly housed in PCH. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.7_IO_Controllers.png) |
+| 2.8 | Embedded Controllers (EC) | Microcontroller handling power sequencing, fans, keyboard (laptops). | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.8_Embedded_Controllers_EC.png) |
+| 2.9 | Super I/O | Legacy chip managing serial/parallel ports, fan control, hardware monitoring. | 🔄 _pending (next session)_ |
+| 2.10 | Clock Generators | Provide reference clocks to CPU, PCIe, memory. Critical for synchronized operation. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.10_Clock_Generators.png) |
+| 2.11 | Management Controllers (BMC) | Out-of-band management, remote diagnostics, independent of main CPU. | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.11_Management_Controllers_BMC.png) |
+| 2.12 | Interconnects (DMI, FDI, etc.) | Proprietary buses linking CPU to PCH; bandwidth/latency implications. | 🔄 _pending (next session)_ |
 
 ---
 
 ## Chapter 03 — _Pending_ ⏳
-
-_Awaiting topic list._
 
 | # | Section | Description | Image |
 |---|---|---|---|
@@ -60,8 +59,6 @@ _Awaiting topic list._
 
 ## Chapter 04 — _Pending_ ⏳
 
-_Awaiting topic list. (Last 8 sections to reach 35 total.)_
-
 | # | Section | Description | Image |
 |---|---|---|---|
 | 4.1 | _TBD_ | _TBD_ | ⏳ |
@@ -78,12 +75,12 @@ _Awaiting topic list. (Last 8 sections to reach 35 total.)_
 ## 📊 Overall Progress
 
 ```
-Chapter 01 ████████████████████ 9/9  ✅
-Chapter 02 ░░░░░░░░░░░░░░░░░░░░ 0/9  ⏳
-Chapter 03 ░░░░░░░░░░░░░░░░░░░░ 0/9  ⏳
-Chapter 04 ░░░░░░░░░░░░░░░░░░░░ 0/8  ⏳
+Chapter 01 ████████████████████ 9/9   ✅
+Chapter 02 ████████████████░░░░ 10/12 🔄 (2 pending: 2.9, 2.12)
+Chapter 03 ░░░░░░░░░░░░░░░░░░░░ 0/9   ⏳
+Chapter 04 ░░░░░░░░░░░░░░░░░░░░ 0/8   ⏳
 ─────────────────────────────────────
-Total        9/35 (25.7%)
+Total       19/35 (54.3%)
 ```
 
 ---

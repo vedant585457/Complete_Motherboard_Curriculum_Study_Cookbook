@@ -11,9 +11,9 @@ Each topic is rendered as a **detailed technical illustration** on a **black bac
 | Chapter | Topic | Sections | Status |
 |---|---|---|---|
 | **01** | Motherboard Fundamentals | 1.1 – 1.9 | ✅ Complete (9 / 9) |
-| **02** | *Coming soon* | 2.1 – 2.9 | ⏳ Pending |
-| **03** | *Coming soon* | 3.1 – 3.9 | ⏳ Pending |
-| **04** | *Coming soon* | 4.1 – 4.8 | ⏳ Pending |
+| **02** | Core Components & Interconnects | 2.1 – 2.12 | 🔄 In progress (10 / 12) |
+| **03** | _Pending topics_ | 3.1 – 3.9 | ⏳ Pending |
+| **04** | _Pending topics_ | 4.1 – 4.8 | ⏳ Pending |
 
 > Total: **35 sections** across multiple chapters
 
@@ -30,18 +30,13 @@ Complete_Motherboard_Curriculum_Study_Cookbook/
 └── visualizelearning/                 ← All generated study-note images
     │
     ├── chapter-01-motherboard-fundamentals/
-    │   ├── 1.1_What_a_Motherboard_Is.png
-    │   ├── 1.2_Purpose_of_a_Motherboard.png
-    │   ├── 1.3_Motherboard_Architecture_Overview.png
-    │   ├── 1.4_Major_Subsystems.png
-    │   ├── 1.5_Signal_Flow.png
-    │   ├── 1.6_Data_Flow.png
-    │   ├── 1.7_Power_Flow.png
-    │   ├── 1.8_Component_Communication.png
-    │   └── 1.9_Form_Factors.png
+    │   ├── 1.1 ... 1.9                ✅ 9 PNGs
     │
-    ├── chapter-02-*/                  ← Future sections will go here
-    ├── chapter-03-*/
+    ├── chapter-02-core-components-interconnects/
+    │   ├── 2.1 ... 2.8, 2.10, 2.11   ✅ 10 PNGs
+    │   └── 2.9, 2.12                  🔄 2 pending (next session)
+    │
+    ├── chapter-03-*/                  ← Future sections will go here
     └── chapter-04-*/
 ```
 
@@ -60,6 +55,25 @@ Complete_Motherboard_Curriculum_Study_Cookbook/
 | 1.7 | Power Flow | [📷](./visualizelearning/chapter-01-motherboard-fundamentals/1.7_Power_Flow.png) | PSU → 24-pin → VRMs → every IC. Dead-board troubleshooting. |
 | 1.8 | Component Communication | [📷](./visualizelearning/chapter-01-motherboard-fundamentals/1.8_Component_Communication.png) | Buses (PCIe, SPI, SMBus, I2C, UART, DMI) for IC communication. |
 | 1.9 | Form Factors | [📷](./visualizelearning/chapter-01-motherboard-fundamentals/1.9_Form_Factors.png) | ATX, mATX, Mini-ITX, E-ATX, SSI CEB/EEB, Mini-STX, NUC. |
+
+---
+
+## 🔄 Chapter 02 — Core Components & Interconnects (In Progress: 10/12)
+
+| # | Section | Image | Description |
+|---|---|---|---|
+| 2.1 | CPU | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.1_CPU.png) | Executes instructions; socket to power, memory, I/O. |
+| 2.2 | Chipset / PCH | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.2_Chipset_PCH.png) | Modern single-chip successor to Northbridge/Southbridge. |
+| 2.3 | Northbridge / Southbridge (Legacy) | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.3_Northbridge_Southbridge_Legacy.png) | Two-chip legacy architecture now mostly absorbed. |
+| 2.4 | Modern Chipset Architecture | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.4_Modern_Chipset_Architecture.png) | PCH ↔ CPU via DMI; memory/PCIe now on-die. |
+| 2.5 | Memory Controller (IMC) | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.5_Memory_Controller_IMC.png) | On-CPU; manages DDR timing, channels, training. |
+| 2.6 | PCIe Root Complex | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.6_PCIe_Root_Complex.png) | CPU-integrated logic originating PCIe transactions. |
+| 2.7 | I/O Controllers | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.7_IO_Controllers.png) | USB, SATA, audio, LAN — mostly in PCH. |
+| 2.8 | Embedded Controllers (EC) | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.8_Embedded_Controllers_EC.png) | Power sequencing, fans, keyboard (laptops). |
+| 2.9 | Super I/O | 🔄 _pending_ | Serial/parallel, fan control, hardware monitoring. |
+| 2.10 | Clock Generators | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.10_Clock_Generators.png) | Reference clocks to CPU, PCIe, memory. |
+| 2.11 | Management Controllers (BMC) | [📷](./visualizelearning/chapter-02-core-components-interconnects/2.11_Management_Controllers_BMC.png) | Out-of-band management, remote diagnostics. |
+| 2.12 | Interconnects (DMI, FDI, etc.) | 🔄 _pending_ | Proprietary buses linking CPU to PCH. |
 
 ---
 
@@ -89,11 +103,11 @@ Complete_Motherboard_Curriculum_Study_Cookbook/
 ## 📌 Progress Tracker
 
 - [x] **Chapter 01 — Motherboard Fundamentals** (9 / 9 sections) ✅
-- [ ] **Chapter 02** — _awaiting topics_
+- [x] **Chapter 02 — Core Components & Interconnects** (10 / 12 sections) 🔄
 - [ ] **Chapter 03** — _awaiting topics_
 - [ ] **Chapter 04** — _awaiting topics_
 
-**Total:** 9 / 35 sections complete (25.7%)
+**Total:** 19 / 35 sections complete (54.3%)
 
 ---
 
