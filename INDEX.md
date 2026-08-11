@@ -1,4 +1,4 @@
-# 📑 Full Curriculum Index — 60 Sections
+# 📑 Full Curriculum Index — 60 Sections ✅ COMPLETE
 
 Complete catalog of all topics covered in the **Complete Motherboard Curriculum — Visual Study Cookbook**.
 
@@ -81,7 +81,7 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 
 ---
 
-## Chapter 05 — Memory, RAM & DDR (13 sections) 🔄
+## Chapter 05 — Memory, RAM & DDR (13 sections) ✅
 
 | # | Section | Description | Image |
 |---|---|---|---|
@@ -95,9 +95,9 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 | 5.8 | EEPROM | Non-volatile chip storing SPD data. | [📷](./visualizelearning/chapter-05-memory-ram-ddr/5.8_EEPROM.png) |
 | 5.9 | ECC (Error-Correcting Code) | Extra bits for error detection/correction. | [📷](./visualizelearning/chapter-05-memory-ram-ddr/5.9_ECC_Error_Correcting_Code.png) |
 | 5.10 | Memory Signaling | Voltage levels and timing margins. | [📷](./visualizelearning/chapter-05-memory-ram-ddr/5.10_Memory_Signaling.png) |
-| 5.11 | Termination | Resistive termination reducing reflections. | 🔄 _pending (next session)_ |
-| 5.12 | Memory Power Rails (VDD, VPP, VTT) | Multiple voltages; failure causes no-boot. | 🔄 _pending (next session)_ |
-| 5.13 | Memory-Related Failures | No POST, training fail, single-stick issues. | 🔄 _pending (next session)_ |
+| 5.11 | Termination | Resistive termination reducing reflections. | [📷](./visualizelearning/chapter-05-memory-ram-ddr/5.11_Termination.png) |
+| 5.12 | Memory Power Rails (VDD, VPP, VTT) | Multiple voltages; failure causes no-boot. | [📷](./visualizelearning/chapter-05-memory-ram-ddr/5.12_Memory_Power_Rails.png) |
+| 5.13 | Memory-Related Failures | No POST, training fail, single-stick issues. | [📷](./visualizelearning/chapter-05-memory-ram-ddr/5.13_Memory_Related_Failures.png) |
 
 ---
 
@@ -108,9 +108,9 @@ Chapter 01 ████████████████████ 9/9    �
 Chapter 02 ████████████████████ 12/12  ✅
 Chapter 03 ████████████████████ 11/11  ✅
 Chapter 04 ████████████████████ 15/15  ✅
-Chapter 05 ████████████░░░░░░░░ 10/13  🔄 (3 pending: 5.11-5.13)
+Chapter 05 ████████████████████ 13/13 ✅
 ─────────────────────────────────────
-Total       57/60 (95.0%)
+Total       60/60 (100.0%) 🎉
 ```
 
 ---
