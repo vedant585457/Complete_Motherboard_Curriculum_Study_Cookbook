@@ -101,7 +101,7 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 
 ---
 
-## Chapter 06 — PCIe Bus (15 sections) 🔄
+## Chapter 06 — PCIe Bus (15 sections) ✅
 
 | # | Section | Description | Image |
 |---|---|---|---|
@@ -131,9 +131,9 @@ Chapter 02 ████████████████████ 12/12  �
 Chapter 03 ████████████████████ 11/11  ✅
 Chapter 04 ████████████████████ 15/15  ✅
 Chapter 05 ████████████████████ 13/13  ✅
-Chapter 06 █████████████░░░░░░ 10/15  🔄 (5 pending: 6.11-6.15)
+Chapter 06 ████████████████████ 15/15 ✅
 ─────────────────────────────────────
-Total       70/75 (93.3%)
+Total       75/75 (100.0%) 🎉
 ```
 
 ---
