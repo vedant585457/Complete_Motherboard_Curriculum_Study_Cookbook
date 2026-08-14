@@ -1,8 +1,10 @@
-# 📑 Full Curriculum Index — 75 Sections ✅ COMPLETE
+# 📑 Full Curriculum Index — 95 / 96 Sections ✅
 
 Complete catalog of all topics covered in the **Complete Motherboard Curriculum — Visual Study Cookbook**.
 
-Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
+Legend: ✅ Done · ⏳ Pending (image pending next session) · 🔄 In progress (this session's limit)
+
+> **Note:** One image is pending (7.21 — VRM Failure Diagnosis) due to the per-session image-generation limit. The textual content is captured in `visualizelearning/chapter-07-power-supply-vrm/7.21_VRM_Failure_Diagnosis_NOTE.md`; the handwritten-notes image will be generated in the next session.
 
 ---
 
@@ -115,25 +117,56 @@ Legend: ✅ Done · ⏳ Pending · 🔄 In progress (this session's limit)
 | 6.8 | Link Training | Auto-negotiation of speed/width. | [📷](./visualizelearning/chapter-06-pcie-bus/6.8_Link_Training.png) |
 | 6.9 | Negotiation | Devices/host agree on parameters. | [📷](./visualizelearning/chapter-06-pcie-bus/6.9_Negotiation.png) |
 | 6.10 | Signal Integrity (PCIe) | Sensitive to length/impedance. | [📷](./visualizelearning/chapter-06-pcie-bus/6.10_Signal_Integrity_PCIe.png) |
-| 6.11 | PCIe Power | Slot + aux connectors. | 🔄 _pending (next session)_ |
-| 6.12 | PCIe Slot Architecture | Physical vs electrical lane count. | 🔄 _pending (next session)_ |
-| 6.13 | GPU Communication | High-bandwidth path for GPU. | 🔄 _pending (next session)_ |
-| 6.14 | NVMe Communication | SSDs use PCIe directly. | 🔄 _pending (next session)_ |
-| 6.15 | PCIe Troubleshooting | No GPU, link degradation, code 43. | 🔄 _pending (next session)_ |
+| 6.11 | PCIe Power | Slot + aux connectors. | [📷](./visualizelearning/chapter-06-pcie-bus/6.11_PCIe_Power.png) |
+| 6.12 | PCIe Slot Architecture | Physical vs electrical lane count. | [📷](./visualizelearning/chapter-06-pcie-bus/6.12_PCIe_Slot_Architecture.png) |
+| 6.13 | GPU Communication | High-bandwidth path for GPU. | [📷](./visualizelearning/chapter-06-pcie-bus/6.13_GPU_Communication.png) |
+| 6.14 | NVMe Communication | SSDs use PCIe directly. | [📷](./visualizelearning/chapter-06-pcie-bus/6.14_NVMe_Communication.png) |
+| 6.15 | PCIe Troubleshooting | No GPU, link degradation, code 43. | [📷](./visualizelearning/chapter-06-pcie-bus/6.15_PCIe_Troubleshooting.png) |
+
+---
+
+## Chapter 07 — Power Supply & VRM (20 / 21 sections) 🔄
+
+| # | Section | Description | Image |
+|---|---|---|---|
+| 7.1 | ATX Power Supply Interface | 24-pin main, EPS12V CPU, PCIe, SATA power. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.1_ATX_Power_Supply_Interface.png) |
+| 7.2 | Rails (12V / 5V / 3.3V) | The three primary DC rails. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.2_Rails_12V_5V_3V3.png) |
+| 7.3 | Standby Power (5VSB) | Always-on rail for wake functions. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.3_Standby_Power_5VSB.png) |
+| 7.4 | VRM Fundamentals | DC-DC buck conversion, topology. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.4_VRM_Fundamentals.png) |
+| 7.5 | PWM Controllers | Switch-mode control IC. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.5_PWM_Controllers.png) |
+| 7.6 | MOSFETs | High-side and low-side switches. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.6_MOSFETs.png) |
+| 7.7 | DrMOS | Integrated driver + FET module. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.7_DrMOS.png) |
+| 7.8 | Power Stages | Smart Power Stage (SPS) packages. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.8_Power_Stages.png) |
+| 7.9 | Inductors | Energy storage element per phase. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.9_Inductors.png) |
+| 7.10 | Capacitors | Bulk + decoupling on the output. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.10_Capacitors.png) |
+| 7.11 | CPU Vcore | Primary core voltage, dynamically adjusted per load (VID). | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.11_CPU_Vcore.png) |
+| 7.12 | SOC Voltage | Separate rail for IMC / uncore. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.12_SOC_Voltage.png) |
+| 7.13 | Memory Voltage | Dedicated VRM for DIMM power (VDD/VPP). | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.13_Memory_Voltage.png) |
+| 7.14 | Chipset Power | Lower-current VRM stage for PCH. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.14_Chipset_Power.png) |
+| 7.15 | Load-Line Calibration (LLC) | Compensates voltage droop under load. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.15_Load_Line_Calibration.png) |
+| 7.16 | Power Sequencing | Order rails must turn on/off to protect ICs. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.16_Power_Sequencing.png) |
+| 7.17 | VRM Phases | Multiple parallel stages share current load. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.17_VRM_Phases.png) |
+| 7.18 | Transient Response | How fast VRM reacts to sudden load steps. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.18_Transient_Response.png) |
+| 7.19 | Efficiency | Power lost as heat during conversion. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.19_Efficiency.png) |
+| 7.20 | Thermal Management (VRM) | Heatsinks / airflow for VRM heat. | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.20_Thermal_Management.png) |
+| 7.21 | VRM Failure Diagnosis | No Vcore, won't boot, burnt MOSFETs — isolate. | ⏳ _pending (next session)_ |
+
+> **7.21 status:** image pending generation. Full text content captured at [`7.21_VRM_Failure_Diagnosis_NOTE.md`](./visualizelearning/chapter-07-power-supply-vrm/7.21_VRM_Failure_Diagnosis_NOTE.md).
 
 ---
 
 ## 📊 Overall Progress
 
 ```
-Chapter 01 ████████████████████ 9/9    ✅
-Chapter 02 ████████████████████ 12/12  ✅
-Chapter 03 ████████████████████ 11/11  ✅
-Chapter 04 ████████████████████ 15/15  ✅
-Chapter 05 ████████████████████ 13/13  ✅
+Chapter 01 ████████████████████ 9/9   ✅
+Chapter 02 ████████████████████ 12/12 ✅
+Chapter 03 ████████████████████ 11/11 ✅
+Chapter 04 ████████████████████ 15/15 ✅
+Chapter 05 ████████████████████ 13/13 ✅
 Chapter 06 ████████████████████ 15/15 ✅
-─────────────────────────────────────
-Total       75/75 (100.0%) 🎉
+Chapter 07 ███████████████████░ 20/21 🔄
+──────────────────────────────────────
+Total       95/96 (99.0%) 🏁
 ```
 
 ---

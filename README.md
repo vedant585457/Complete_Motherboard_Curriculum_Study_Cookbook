@@ -1,6 +1,6 @@
 # 🖥️ Complete Motherboard Curriculum — Visual Study Cookbook
 
-> A **47-section deep-dive** into motherboard design, architecture, signals, power, and troubleshooting — visualized as dense, handwritten-style chalkboard study notes.
+> A **96-section deep-dive** into motherboard design, architecture, signals, power, and troubleshooting — visualized as dense, handwritten-style chalkboard study notes.
 
 Each topic is rendered as a **detailed technical illustration** on a **black background with white text**, packed edge-to-edge with definitions, diagrams, part numbers, voltages, frequencies, troubleshooting tips, and comparison tables — the way an engineering student would scribble them on a blackboard.
 
@@ -16,8 +16,9 @@ Each topic is rendered as a **detailed technical illustration** on a **black bac
 | **04** | Chipset, Buses & Diagnosis | 4.1 – 4.15 | ✅ Complete (15 / 15) |
 | **05** | Memory, RAM & DDR | 5.1 – 5.13 | ✅ Complete (13 / 13) |
 | **06** | PCIe Bus | 6.1 – 6.15 | ✅ Complete (15 / 15) |
+| **07** | Power Supply & VRM | 7.1 – 7.21 | 🔄 20 / 21 (1 image pending) |
 
-> Total: **47 sections** across 4 chapters (originally specified as ~35; user provided 47 topics)
+> Total: **96 sections** across 7 chapters (originally specified as ~35 topics; final delivered = 96 sections, 1 image pending for next session)
 
 ---
 
@@ -95,6 +96,34 @@ Complete_Motherboard_Curriculum_Study_Cookbook/
 
 ---
 
+## 🔄 Chapter 07 — Power Supply & VRM (20 / 21 Complete)
+
+| # | Section | Image | Description |
+|---|---|---|---|
+| 7.1 | ATX Power Supply Interface | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.1_ATX_Power_Supply_Interface.png) | 24-pin main, EPS12V CPU, PCIe, SATA power. |
+| 7.2 | Rails (12V / 5V / 3.3V) | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.2_Rails_12V_5V_3V3.png) | The three primary DC rails. |
+| 7.3 | Standby Power (5VSB) | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.3_Standby_Power_5VSB.png) | Always-on rail for wake functions. |
+| 7.4 | VRM Fundamentals | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.4_VRM_Fundamentals.png) | DC-DC buck conversion, topology. |
+| 7.5 | PWM Controllers | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.5_PWM_Controllers.png) | Switch-mode control IC. |
+| 7.6 | MOSFETs | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.6_MOSFETs.png) | High-side and low-side switches. |
+| 7.7 | DrMOS | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.7_DrMOS.png) | Integrated driver + FET module. |
+| 7.8 | Power Stages | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.8_Power_Stages.png) | Smart Power Stage (SPS) packages. |
+| 7.9 | Inductors | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.9_Inductors.png) | Energy storage element per phase. |
+| 7.10 | Capacitors | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.10_Capacitors.png) | Bulk + decoupling on the output. |
+| 7.11 | CPU Vcore | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.11_CPU_Vcore.png) | Primary core voltage, dynamically adjusted per load (VID). |
+| 7.12 | SOC Voltage | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.12_SOC_Voltage.png) | Separate rail for IMC / uncore. |
+| 7.13 | Memory Voltage | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.13_Memory_Voltage.png) | Dedicated VRM for DIMM power (VDD/VPP). |
+| 7.14 | Chipset Power | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.14_Chipset_Power.png) | Lower-current VRM stage for PCH. |
+| 7.15 | Load-Line Calibration (LLC) | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.15_Load_Line_Calibration.png) | Compensates voltage droop under load. |
+| 7.16 | Power Sequencing | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.16_Power_Sequencing.png) | Order rails must turn on/off to protect ICs. |
+| 7.17 | VRM Phases | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.17_VRM_Phases.png) | Multiple parallel stages share current load. |
+| 7.18 | Transient Response | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.18_Transient_Response.png) | How fast VRM reacts to sudden load steps. |
+| 7.19 | Efficiency | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.19_Efficiency.png) | Power lost as heat during conversion. |
+| 7.20 | Thermal Management (VRM) | [📷](./visualizelearning/chapter-07-power-supply-vrm/7.20_Thermal_Management.png) | Heatsinks / airflow for VRM heat. |
+| 7.21 | VRM Failure Diagnosis | ⏳ _pending (next session)_ — [textual content](./visualizelearning/chapter-07-power-supply-vrm/7.21_VRM_Failure_Diagnosis_NOTE.md) | No Vcore, won't boot, burnt MOSFETs — isolate. |
+
+---
+
 ## 🎨 Visual Style
 
 - **Format:** PNG images
@@ -126,10 +155,11 @@ Complete_Motherboard_Curriculum_Study_Cookbook/
 - [x] **Chapter 04 — Chipset, Buses & Diagnosis** (15 / 15 sections) ✅
 - [x] **Chapter 05 — Memory, RAM & DDR** (13 / 13 sections) ✅
 - [x] **Chapter 06 — PCIe Bus** (15 / 15 sections) ✅
+- [🔄] **Chapter 07 — Power Supply & VRM** (20 / 21 sections) — 1 image pending for next session
 
-**Total:** 75 / 75 sections complete (100.0%) 🎉 **CURRICULUM COMPLETE**
+**Total:** 95 / 96 sections complete (99.0%) 🏁
 
-_Note: User originally specified ~35 sections; actual delivered = 47 unique topics (9+12+11+15) across 4 chapters. All generated, indexed, and live on GitHub._
+_Note: User originally specified ~35 sections; final delivered = 96 unique topics (9+12+11+15+13+15+21) across 7 chapters. 95 images generated and live on GitHub; one image (7.21) is queued for the next session due to the per-session image-generation limit._
 
 ---
 
