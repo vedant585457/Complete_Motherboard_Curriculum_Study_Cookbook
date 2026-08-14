@@ -1,6 +1,6 @@
 # 🖥️ Complete Motherboard Curriculum — Visual Study Cookbook
 
-> A **96-section deep-dive** into motherboard design, architecture, signals, power, and troubleshooting — visualized as dense, handwritten-style chalkboard study notes.
+> A **110-section deep-dive** into motherboard design, architecture, signals, power, sequencing, and troubleshooting — visualized as dense, handwritten-style chalkboard study notes.
 
 Each topic is rendered as a **detailed technical illustration** on a **black background with white text**, packed edge-to-edge with definitions, diagrams, part numbers, voltages, frequencies, troubleshooting tips, and comparison tables — the way an engineering student would scribble them on a blackboard.
 
@@ -17,8 +17,9 @@ Each topic is rendered as a **detailed technical illustration** on a **black bac
 | **05** | Memory, RAM & DDR | 5.1 – 5.13 | ✅ Complete (13 / 13) |
 | **06** | PCIe Bus | 6.1 – 6.15 | ✅ Complete (15 / 15) |
 | **07** | Power Supply & VRM | 7.1 – 7.21 | 🔄 20 / 21 (1 image pending) |
+| **08** | Power Sequencing & ACPI States | 8.1 – 8.14 | 🔄 10 / 14 (4 images pending) |
 
-> Total: **96 sections** across 7 chapters (originally specified as ~35 topics; final delivered = 96 sections, 1 image pending for next session)
+> Total: **110 sections** across 8 chapters (originally specified as ~35 topics; final delivered = 110 sections, 5 images pending for next session)
 
 ---
 
@@ -124,6 +125,27 @@ Complete_Motherboard_Curriculum_Study_Cookbook/
 
 ---
 
+## 🔄 Chapter 08 — Power Sequencing & ACPI States (10 / 14 Complete)
+
+| # | Section | Image | Description |
+|---|---|---|---|
+| 8.1 | ACPI States Overview | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.1_ACPI_States_Overview.png) | Standardized power states (G/S/C/D) defining system power behavior. |
+| 8.2 | G3 (Mechanical Off) | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.2_G3_Mechanical_Off.png) | No power except possibly RTC battery. |
+| 8.3 | S5 (Soft Off) | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.3_S5_Soft_Off.png) | Standby power present, main rails off; wake-on-LAN possible. |
+| 8.4 | S3 (Suspend to RAM) | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.4_S3_Suspend_to_RAM.png) | RAM retains state on minimal power; fast resume. |
+| 8.5 | S0 (Fully On) | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.5_S0_Fully_On.png) | Normal operating state, all rails active. |
+| 8.6 | Power Button Signal | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.6_Power_Button_Signal.png) | Momentary switch signals EC/SuperIO to begin power-on sequence. |
+| 8.7 | PS_ON# | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.7_PS_ON.png) | Signal from motherboard to PSU requesting main rails activate. |
+| 8.8 | PWR_OK | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.8_PWR_OK.png) | PSU confirms stable output before motherboard proceeds with boot. |
+| 8.9 | Reset Signals | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.9_Reset_Signals.png) | Ensure all ICs start in known state; must de-assert in correct order. |
+| 8.10 | Voltage Rail Sequencing | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.10_Voltage_Rail_Sequencing.png) | Rails must power up/down in specific order per IC datasheets. |
+| 8.11 | Enable Signals | ⏳ _pending (next session)_ | GPIO lines that turn on individual VRM stages in sequence. |
+| 8.12 | Power Controllers (Sequencers) | ⏳ _pending (next session)_ | Dedicated ICs enforcing correct rail sequencing. |
+| 8.13 | CPU Startup Sequence | ⏳ _pending (next session)_ | From PWR_OK to first instruction fetch; multi-stage process. |
+| 8.14 | POST Power Sequence | ⏳ _pending (next session)_ | Power stabilizes before firmware begins hardware initialization. |
+
+---
+
 ## 🎨 Visual Style
 
 - **Format:** PNG images
@@ -156,10 +178,11 @@ Complete_Motherboard_Curriculum_Study_Cookbook/
 - [x] **Chapter 05 — Memory, RAM & DDR** (13 / 13 sections) ✅
 - [x] **Chapter 06 — PCIe Bus** (15 / 15 sections) ✅
 - [🔄] **Chapter 07 — Power Supply & VRM** (20 / 21 sections) — 1 image pending for next session
+- [🔄] **Chapter 08 — Power Sequencing & ACPI States** (10 / 14 sections) — 4 images pending for next session
 
-**Total:** 95 / 96 sections complete (99.0%) 🏁
+**Total:** 105 / 110 sections complete (95.5%) 🏁
 
-_Note: User originally specified ~35 sections; final delivered = 96 unique topics (9+12+11+15+13+15+21) across 7 chapters. 95 images generated and live on GitHub; one image (7.21) is queued for the next session due to the per-session image-generation limit._
+_Note: User originally specified ~35 sections; final delivered = 110 unique topics (9+12+11+15+13+15+21+14) across 8 chapters. 105 images generated and live on GitHub; five images (7.21, 8.11, 8.12, 8.13, 8.14) are queued for the next session due to the per-session image-generation limit._
 
 ---
 

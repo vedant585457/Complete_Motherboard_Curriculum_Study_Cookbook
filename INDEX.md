@@ -1,10 +1,10 @@
-# 📑 Full Curriculum Index — 95 / 96 Sections ✅
+# 📑 Full Curriculum Index — 105 / 110 Sections ✅
 
 Complete catalog of all topics covered in the **Complete Motherboard Curriculum — Visual Study Cookbook**.
 
 Legend: ✅ Done · ⏳ Pending (image pending next session) · 🔄 In progress (this session's limit)
 
-> **Note:** One image is pending (7.21 — VRM Failure Diagnosis) due to the per-session image-generation limit. The textual content is captured in `visualizelearning/chapter-07-power-supply-vrm/7.21_VRM_Failure_Diagnosis_NOTE.md`; the handwritten-notes image will be generated in the next session.
+> **Note:** Five images are pending (7.21 — VRM Failure Diagnosis; 8.11, 8.12, 8.13, 8.14) due to the per-session image-generation limit. The 7.21 textual content is captured in `visualizelearning/chapter-07-power-supply-vrm/7.21_VRM_Failure_Diagnosis_NOTE.md`; the handwritten-notes images will be generated in the next session.
 
 ---
 
@@ -155,18 +155,40 @@ Legend: ✅ Done · ⏳ Pending (image pending next session) · 🔄 In progress
 
 ---
 
+## Chapter 08 — Power Sequencing & ACPI States (10 / 14 sections) 🔄
+
+| # | Section | Description | Image |
+|---|---|---|---|
+| 8.1 | ACPI States Overview | Standardized power states (G/S/C/D) defining system power behavior. | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.1_ACPI_States_Overview.png) |
+| 8.2 | G3 (Mechanical Off) | No power except possibly RTC battery. | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.2_G3_Mechanical_Off.png) |
+| 8.3 | S5 (Soft Off) | Standby power present, main rails off; wake-on-LAN possible. | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.3_S5_Soft_Off.png) |
+| 8.4 | S3 (Suspend to RAM) | RAM retains state on minimal power; fast resume. | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.4_S3_Suspend_to_RAM.png) |
+| 8.5 | S0 (Fully On) | Normal operating state, all rails active. | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.5_S0_Fully_On.png) |
+| 8.6 | Power Button Signal | Momentary switch signals EC/SuperIO to begin power-on sequence. | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.6_Power_Button_Signal.png) |
+| 8.7 | PS_ON# | Signal from motherboard to PSU requesting main rails activate. | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.7_PS_ON.png) |
+| 8.8 | PWR_OK | PSU confirms stable output before motherboard proceeds with boot. | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.8_PWR_OK.png) |
+| 8.9 | Reset Signals | Ensure all ICs start in known state; must de-assert in correct order. | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.9_Reset_Signals.png) |
+| 8.10 | Voltage Rail Sequencing | Rails must power up/down in specific order per IC datasheets. | [📷](./visualizelearning/chapter-08-power-sequencing-states/8.10_Voltage_Rail_Sequencing.png) |
+| 8.11 | Enable Signals | GPIO lines that turn on individual VRM stages in sequence. | ⏳ _pending (next session)_ |
+| 8.12 | Power Controllers (Sequencers) | Dedicated ICs enforcing correct rail sequencing. | ⏳ _pending (next session)_ |
+| 8.13 | CPU Startup Sequence | From PWR_OK to first instruction fetch; multi-stage process. | ⏳ _pending (next session)_ |
+| 8.14 | POST Power Sequence | Power stabilizes before firmware begins hardware initialization. | ⏳ _pending (next session)_ |
+
+---
+
 ## 📊 Overall Progress
 
 ```
-Chapter 01 ████████████████████ 9/9   ✅
-Chapter 02 ████████████████████ 12/12 ✅
-Chapter 03 ████████████████████ 11/11 ✅
-Chapter 04 ████████████████████ 15/15 ✅
-Chapter 05 ████████████████████ 13/13 ✅
-Chapter 06 ████████████████████ 15/15 ✅
-Chapter 07 ███████████████████░ 20/21 🔄
-──────────────────────────────────────
-Total       95/96 (99.0%) 🏁
+Chapter 01 ████████████████████ 9/9    ✅
+Chapter 02 ████████████████████ 12/12  ✅
+Chapter 03 ████████████████████ 11/11  ✅
+Chapter 04 ████████████████████ 15/15  ✅
+Chapter 05 ████████████████████ 13/13  ✅
+Chapter 06 ████████████████████ 15/15  ✅
+Chapter 07 ███████████████████░ 20/21  🔄
+Chapter 08 ██████████████░░░░░ 10/14   🔄
+───────────────────────────────────────
+Total       105/110 (95.5%) 🏁
 ```
 
 ---
